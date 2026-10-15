@@ -1,0 +1,48 @@
+import { useState } from 'react'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import Stats from './components/Stats'
+import About from './components/About'
+import TechSpecs from './components/TechSpecs'
+import Marquee from './components/Marquee'
+import Clients from './components/Clients'
+import SafetyHSE from './components/SafetyHSE'
+import Locations from './components/Locations'
+import CtaBand from './components/CtaBand'
+import Footer from './components/Footer'
+import ContactModal from './components/ContactModal'
+
+export default function App() {
+  const [contactOpen, setContactOpen] = useState(false)
+  const openContact = () => setContactOpen(true)
+  const closeContact = () => setContactOpen(false)
+
+  return (
+    <div className="relative min-h-screen overflow-x-hidden bg-slate-50">
+      <a
+        href="#inicio"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[80] focus:rounded-full focus:bg-emerald-600 focus:px-5 focus:py-2.5 focus:text-sm focus:font-semibold focus:text-white"
+      >
+        Saltar al contenido
+      </a>
+
+      <Navbar onOpenContact={openContact} />
+
+      <main>
+        <Hero />
+        <Stats />
+        <About />
+        <TechSpecs />
+        <Marquee />
+        <Clients />
+        <SafetyHSE />
+        <Locations />
+        <CtaBand onOpenContact={openContact} />
+      </main>
+
+      <Footer onOpenContact={openContact} />
+
+      <ContactModal open={contactOpen} onClose={closeContact} />
+    </div>
+  )
+}
