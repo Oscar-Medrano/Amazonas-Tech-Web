@@ -21,7 +21,7 @@ const INITIAL_FORM = {
 
 export default function ContactModal({ open, onClose }) {
   const [form, setForm] = useState(INITIAL_FORM)
-  const [sent, setSent] = useState(false)
+  const [status, setStatus] = useState('idle')
 
   useEffect(() => {
     if (!open) return
@@ -39,9 +39,9 @@ export default function ContactModal({ open, onClose }) {
   useEffect(() => {
     if (open) return
     const timer = setTimeout(() => {
-      setSent(false)
+      setStatus('idle')
       setForm(INITIAL_FORM)
-    }, 250)
+    }, 300)
     return () => clearTimeout(timer)
   }, [open])
 
@@ -49,9 +49,34 @@ export default function ContactModal({ open, onClose }) {
     setForm((prev) => ({ ...prev, [key]: event.target.value }))
   }
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault()
-    setSent(true)
+    if (status === 'sending') return
+    setStatus('sending')
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/mercadeo@amazonastech.com.ve', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          nombre: form.nombre,
+          empresa: form.empresa || 'No especificada',
+          email: form.email,
+          telefono: form.telefono || 'No especificado',
+          servicio: form.servicio,
+          mensaje: form.mensaje || '(Sin mensaje)',
+          _subject: 'Nueva solicitud de propuesta técnica — Amazonas Tech Web',
+          _captcha: 'false',
+          _template: 'table',
+        }),
+      })
+      if (!response.ok) throw new Error('Error al enviar')
+      setStatus('sent')
+    } catch {
+      setStatus('error')
+    }
   }
 
   if (!open) return null
@@ -63,7 +88,7 @@ export default function ContactModal({ open, onClose }) {
       aria-modal="true"
       aria-label="Solicitar propuesta técnica"
     >
-      <div className="absolute inset-0 bg-slate-900/40 backdrop-blur-md animate-fade-in" onClick={onClose} />
+      <div className="absolute inset-0 bg-slate-900/40 backdrop-blur-md animate-fade-in" onClick={() => status !== 'sending' && onClose()} />
 
       <div className="scrollbar-thin glass-panel relative max-h-[92dvh] w-full max-w-lg overflow-y-auto p-7 shadow-soft-lg animate-scale-in sm:p-9">
         <div className="pointer-events-none absolute -right-20 -top-20 h-52 w-52 rounded-full bg-emerald-200/50 blur-3xl" aria-hidden="true" />
@@ -71,13 +96,14 @@ export default function ContactModal({ open, onClose }) {
         <button
           type="button"
           onClick={onClose}
-          className="absolute right-4 top-4 inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 shadow-sm transition-all duration-300 ease-in-out hover:border-emerald-300 hover:text-emerald-600"
+          disabled={status === 'sending'}
+          className="absolute right-4 top-4 inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-600 shadow-sm transition-all duration-300 ease-in-out hover:border-emerald-300 hover:text-emerald-600 disabled:opacity-50"
           aria-label="Cerrar"
         >
           <IconClose />
         </button>
 
-        {sent ? (
+        {status === 'sent' ? (
           <div className="relative py-8 text-center animate-fade-up">
             <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl border border-emerald-200 bg-emerald-50 text-emerald-600 shadow-soft">
               <IconCheck className="h-7 w-7" />
@@ -179,10 +205,19 @@ export default function ContactModal({ open, onClose }) {
               </div>
 
               <div className="sm:col-span-2">
-                <button type="submit" className="btn-primary w-full !py-4 text-[15px]">
-                  Enviar solicitud
+                <button
+                  type="submit"
+                  disabled={status === 'sending'}
+                  className="btn-primary w-full !py-4 text-[15px] disabled:cursor-wait disabled:opacity-70"
+                >
+                  {status === 'sending' ? 'Enviando solicitud…' : 'Enviar solicitud'}
                 </button>
-                <div className="mt-5 flex items-center justify-center gap-2 text-xs text-slate-500">
+                {status === 'error' && (
+                  <p className="mt-3 text-center text-xs font-medium text-red-600">
+                    No pudimos enviar su solicitud. Por favor intente nuevamente o llame al (0291) 315.17.12.
+                  </p>
+                )}
+                <div className="mt-5 flex items-center justify-center gap-2 text-xs text-slate-600">
                   <IconPhone className="h-3.5 w-3.5" />
                   Atención directa: (0291) 315.17.12 · (0283) 241.76.94
                 </div>

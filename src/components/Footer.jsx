@@ -1,4 +1,4 @@
-import { IconArrowUpRight, IconMail, IconMapPin, IconPhone } from './icons'
+import { IconArrowUpRight, IconMapPin, IconPhone } from './icons'
 import Logo from './Logo'
 
 const CURRENT_YEAR = new Date().getFullYear()
@@ -13,8 +13,9 @@ const SERVICES_LINKS = [
 
 const COMPANY_LINKS = [
   { label: 'Nosotros', href: '#nosotros' },
-  { label: 'Certificaciones HSE', href: '#hse' },
+  { label: 'HSEQ', href: '#hse' },
   { label: 'Ubicaciones', href: '#ubicaciones' },
+  { label: 'Empleo', href: '#empleo' },
 ]
 
 export default function Footer({ onOpenContact }) {
@@ -31,7 +32,7 @@ export default function Footer({ onOpenContact }) {
             <p className="mt-6 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.25em] text-emerald-700">
               Ambientalmente Comprometidos.
             </p>
-            <p className="mt-5 text-xs font-medium uppercase tracking-[0.25em] text-slate-500">RIF: J-311095225-5</p>
+            <p className="mt-5 text-xs font-medium uppercase tracking-[0.25em] text-slate-600">RIF: J-311095225-5</p>
           </div>
 
           <div>
@@ -98,22 +99,16 @@ export default function Footer({ onOpenContact }) {
                   <a href="tel:+582832417694" className="transition-colors hover:text-emerald-600">(0283) 241.76.94</a>
                 </span>
               </li>
-              <li className="flex gap-3">
-                <IconMail className="mt-0.5 h-4 w-4 shrink-0 text-emerald-500" />
-                <a href="mailto:contacto@amazonastech.com.ve" className="leading-relaxed transition-colors hover:text-emerald-600">
-                  contacto@amazonastech.com.ve
-                </a>
-              </li>
             </ul>
-            <a href="mailto:contacto@amazonastech.com.ve" className="btn-secondary mt-6 !px-5 !py-2.5 !text-[13px]">
-              Escríbenos
+            <a href="#ubicaciones" className="btn-secondary mt-6 !px-5 !py-2.5 !text-[13px]">
+              Ver sedes en el mapa
               <IconArrowUpRight className="h-4 w-4" />
             </a>
           </div>
         </div>
 
         <div className="mt-14 flex flex-col items-center justify-between gap-5 border-t border-slate-200 pt-8 sm:flex-row">
-          <p className="text-xs text-slate-500">
+          <p className="text-xs text-slate-600">
             © {CURRENT_YEAR} Amazonas Tech, C.A. · RIF: J-311095225-5 · Todos los derechos reservados.
           </p>
           <p className="text-sm font-medium text-emerald-600">Ambientalmente Comprometidos.</p>

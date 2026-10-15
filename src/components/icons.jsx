@@ -89,13 +89,12 @@ export function IconLeaf({ className = 'h-5 w-5' }) {
 export function IconRecycle({ className = 'h-5 w-5' }) {
   return (
     <svg viewBox="0 0 24 24" className={className} aria-hidden="true" {...base}>
-      <path d="M7 19H4.8a2 2 0 0 1-1.7-3l1.9-3.2" />
-      <path d="m9.3 9.3 1.6-2.7a2 2 0 0 1 3.4 0l1.6 2.7" />
-      <path d="M14.5 19h-5" />
-      <path d="m17.6 12.8 1.9 3.2a2 2 0 0 1-1.7 3H15" />
-      <path d="m7 15 2.5 4" />
-      <path d="M17 9.5 14.8 5.5" />
-      <path d="m11 20 .6 1.3a2 2 0 0 0 3.6-.5l.9-2" />
+      <path d="M10.98 5.93 5.22 15.73" />
+      <path d="M7.1 14.58 5.22 15.73 5.32 13.53" />
+      <path d="M6.4 17.8H18.6" />
+      <path d="M16.66 16.77 18.6 17.8 16.66 18.83" />
+      <path d="M18.78 15.73 13.22 6.27" />
+      <path d="M13.32 8.47 13.22 6.27 15.1 7.42" />
     </svg>
   )
 }
@@ -149,6 +148,14 @@ export function IconLayer({ className = 'h-5 w-5' }) {
       <path d="m12 2 9 5-9 5-9-5z" />
       <path d="m3 12 9 5 9-5" />
       <path d="m3 17 9 5 9-5" />
+    </svg>
+  )
+}
+
+export function IconLinkedIn({ className = 'h-5 w-5' }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} aria-hidden="true" fill="currentColor">
+      <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.36V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z" />
     </svg>
   )
 }

@@ -22,7 +22,7 @@ export default function Stats() {
                 <dd className="relative mt-3 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
                   {stat.value}
                 </dd>
-                <dd className="relative mt-2 text-sm leading-relaxed text-slate-500">{stat.detail}</dd>
+                <dd className="relative mt-2 text-sm leading-relaxed text-slate-600">{stat.detail}</dd>
               </div>
             </Reveal>
           ))}

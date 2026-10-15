@@ -28,9 +28,9 @@ const LOCATIONS = [
 
 export default function Locations() {
   return (
-    <section id="ubicaciones" className="relative overflow-hidden border-t border-slate-200 bg-gradient-to-b from-emerald-50/70 via-slate-50 to-slate-50 py-24 sm:py-32">
+    <section id="ubicaciones" className="relative overflow-hidden border-t border-slate-200 bg-gradient-to-b from-emerald-100/80 via-emerald-50/50 to-emerald-50/50 py-24 sm:py-32">
       <div className="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
-        <div className="absolute left-1/2 top-1/2 h-[32rem] w-[32rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-200/40 blur-[130px] animate-pulse-glow" />
+        <div className="absolute left-1/2 top-1/2 h-[34rem] w-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-300/50 blur-[130px] animate-pulse-glow" />
       </div>
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <Reveal className="mx-auto max-w-3xl text-center">
@@ -60,7 +60,7 @@ export default function Locations() {
                       </p>
                     </div>
                   </div>
-                  <span className="hidden rounded-full border border-slate-200 bg-slate-50 px-3.5 py-1.5 text-[11px] font-medium uppercase tracking-[0.15em] text-slate-500 sm:block">
+                  <span className="hidden rounded-full border border-slate-200 bg-slate-50 px-3.5 py-1.5 text-[11px] font-medium uppercase tracking-[0.15em] text-slate-600 sm:block">
                     {location.badge}
                   </span>
                 </div>

@@ -85,10 +85,10 @@ export default function TechSpecs() {
   const tab = TABS[active]
 
   return (
-    <section id="servicios" className="relative overflow-hidden border-t border-slate-200 bg-gradient-to-b from-emerald-50/70 via-slate-50 to-slate-50 py-24 sm:py-32">
+    <section id="servicios" className="relative overflow-hidden border-t border-slate-200 bg-gradient-to-b from-emerald-100/80 via-emerald-50/50 to-emerald-50/50 py-24 sm:py-32">
       <div className="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
         <div className="absolute inset-0 grid-lines opacity-40" />
-        <div className="absolute left-1/2 top-1/2 h-[32rem] w-[32rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-200/40 blur-[130px] animate-pulse-glow" />
+        <div className="absolute left-1/2 top-1/2 h-[34rem] w-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-300/50 blur-[130px] animate-pulse-glow" />
       </div>
 
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
@@ -118,7 +118,7 @@ export default function TechSpecs() {
                   } ${
                     active === index
                       ? 'bg-white text-emerald-700 shadow-sm ring-1 ring-slate-200'
-                      : 'text-slate-500 hover:text-slate-900'
+                      : 'text-slate-600 hover:text-slate-900'
                   }`}
                 >
                   {item.label}
@@ -129,7 +129,7 @@ export default function TechSpecs() {
         </Reveal>
 
         <div key={tab.id} className="mt-10 grid animate-fade-up gap-8 lg:mt-12 lg:grid-cols-2 lg:gap-12">
-          <div className="group relative overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white shadow-soft">
+          <div className="group relative min-h-[20rem] overflow-hidden rounded-[1.75rem] border border-slate-200 bg-slate-900 shadow-soft sm:min-h-[24rem] lg:min-h-[30rem]">
             <img
               src={tab.image}
               alt={tab.alt}
@@ -137,7 +137,7 @@ export default function TechSpecs() {
               height={1254}
               loading="lazy"
               decoding="async"
-              className="aspect-[4/3] w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.03]"
+              className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.03]"
             />
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent" />
             <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
@@ -165,9 +165,9 @@ export default function TechSpecs() {
 
             <ul className="mt-9 grid gap-3.5 sm:grid-cols-2">
               {tab.specs.map((spec) => (
-                <li key={spec} className="flex items-start gap-3 text-[15px] leading-relaxed text-slate-600">
-                  <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-emerald-200 bg-emerald-50 text-emerald-600">
-                    <IconCheck className="h-3 w-3" />
+                <li key={spec} className="flex items-start gap-3.5 text-[15px] leading-relaxed text-slate-600">
+                  <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-emerald-600 to-emerald-500 text-white shadow-soft transition-all duration-300 ease-in-out hover:from-emerald-500 hover:to-emerald-400">
+                    <IconCheck className="h-3.5 w-3.5" />
                   </span>
                   {spec}
                 </li>

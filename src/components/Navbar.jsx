@@ -5,8 +5,9 @@ import { IconClose, IconMenu } from './icons'
 const NAV_LINKS = [
   { label: 'Nosotros', href: '#nosotros' },
   { label: 'Servicios', href: '#servicios' },
-  { label: 'Certificaciones HSE', href: '#hse' },
+  { label: 'HSEQ', href: '#hse' },
   { label: 'Ubicaciones', href: '#ubicaciones' },
+  { label: 'Empleo', href: '#empleo' },
 ]
 
 export default function Navbar({ onOpenContact }) {
@@ -50,12 +51,12 @@ export default function Navbar({ onOpenContact }) {
         >
           <Logo className="shrink-0" onNavigate={() => setMenuOpen(false)} />
 
-          <ul className="hidden flex-1 items-center justify-center gap-1 lg:flex">
+          <ul className="hidden flex-1 items-center justify-center gap-1 xl:flex">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="relative rounded-full px-4 py-2 text-[13px] font-medium text-slate-600 transition-all duration-300 ease-in-out hover:bg-slate-100 hover:text-slate-900"
+                  className="relative rounded-full px-4 py-2 text-[15px] font-bold text-black transition-all duration-300 ease-in-out hover:bg-slate-100 hover:text-emerald-700"
                 >
                   {link.label}
                 </a>
@@ -63,18 +64,18 @@ export default function Navbar({ onOpenContact }) {
             ))}
           </ul>
 
-          <div className="ml-auto flex shrink-0 items-center lg:ml-0">
+          <div className="ml-auto flex shrink-0 items-center xl:ml-0">
             <button
               type="button"
               onClick={onOpenContact}
-              className="btn-primary hidden !px-6 !py-2.5 !text-[13px] sm:inline-flex"
+              className="btn-primary hidden !px-6 !py-2.5 !text-[13px] xl:inline-flex"
             >
               Solicitar Propuesta Técnica
             </button>
             <button
               type="button"
               onClick={() => setMenuOpen(true)}
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition-all duration-300 ease-in-out hover:border-emerald-300 hover:text-emerald-600 lg:hidden"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition-all duration-300 ease-in-out hover:border-emerald-300 hover:text-emerald-600 xl:hidden"
               aria-label="Abrir menú"
               aria-expanded={menuOpen}
             >
@@ -85,7 +86,7 @@ export default function Navbar({ onOpenContact }) {
       </header>
 
       <div
-        className={`fixed inset-0 z-[60] transition-all duration-300 ease-in-out lg:hidden ${
+        className={`fixed inset-0 z-[60] transition-all duration-300 ease-in-out xl:hidden ${
           menuOpen ? 'visible opacity-100' : 'invisible opacity-0'
         }`}
         role="dialog"
@@ -137,8 +138,8 @@ export default function Navbar({ onOpenContact }) {
             >
               Solicitar Propuesta Técnica
             </button>
-            <div className="mt-6 flex flex-col gap-2 text-sm text-slate-500">
-              <p className="text-xs font-medium uppercase tracking-[0.25em] text-slate-400">Atención directa</p>
+            <div className="mt-6 flex flex-col gap-2 text-sm text-slate-600">
+              <p className="text-xs font-medium uppercase tracking-[0.25em] text-slate-500">Atención directa</p>
               <a href="tel:+582913151712" className="flex items-center gap-2.5 transition-colors hover:text-emerald-600">
                 Sede Maturín — (0291) 315.17.12
               </a>
@@ -146,7 +147,7 @@ export default function Navbar({ onOpenContact }) {
                 Base El Tigre — (0283) 241.76.94
               </a>
             </div>
-            <p className="mt-6 text-xs tracking-widest text-slate-400">AMAZONAS TECH, C.A. · RIF: J-311095225-5</p>
+            <p className="mt-6 text-xs tracking-widest text-slate-500">AMAZONAS TECH, C.A. · RIF: J-311095225-5</p>
           </div>
         </div>
       </div>

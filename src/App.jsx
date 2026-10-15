@@ -8,6 +8,7 @@ import Marquee from './components/Marquee'
 import Clients from './components/Clients'
 import SafetyHSE from './components/SafetyHSE'
 import Locations from './components/Locations'
+import Empleo from './components/Empleo'
 import CtaBand from './components/CtaBand'
 import Footer from './components/Footer'
 import ContactModal from './components/ContactModal'
@@ -38,6 +39,7 @@ export default function App() {
         <SafetyHSE />
         <Locations />
         <CtaBand onOpenContact={openContact} />
+        <Empleo />
       </main>
 
       <Footer onOpenContact={openContact} />

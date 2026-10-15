@@ -194,8 +194,20 @@
     @apply translate-y-0;
   }
 
+  .btn-glass {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/30 bg-white/10 px-7 py-3.5 text-sm font-semibold text-white shadow-sm backdrop-blur-md transition-all duration-300 ease-in-out;
+  }
+
+  .btn-glass:hover {
+    @apply -translate-y-0.5 border-emerald-300/70 bg-emerald-400/15 text-emerald-100;
+  }
+
+  .btn-glass:active {
+    @apply translate-y-0;
+  }
+
   .field-label {
-    @apply mb-1.5 block text-xs font-medium uppercase tracking-widest text-slate-500;
+    @apply mb-1.5 block text-xs font-medium uppercase tracking-widest text-slate-600;
   }
 
   .field-input {
