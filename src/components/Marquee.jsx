@@ -3,7 +3,7 @@ const IMAGES = [
   { src: '/img/mud-cleaner.jpg', alt: 'Mud Cleaner — separación fina de sólidos' },
   { src: '/img/maquinaria-pesada.jpg', alt: 'Maquinaria pesada en operación' },
   { src: '/img/maquinaria-especializada.jpg', alt: 'Maquinaria especializada en planta de procesos' },
-  { src: '/img/distribuidor-fluidos.jpg', alt: 'Distribuidor de fluidos en locación' },
+  { src: '/img/camionetas.jpeg', alt: 'Camionetas de Amazonas Tech' },
 ]
 
 export default function Marquee() {

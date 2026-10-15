@@ -26,7 +26,7 @@ const PILLARS = [
 
 export default function SafetyHSE() {
   return (
-    <section id="hse" className="relative overflow-hidden border-t border-slate-200 bg-gradient-to-b from-emerald-100/80 via-emerald-50/50 to-emerald-50/50 py-24 sm:py-32">
+    <section id="hse" className="relative overflow-hidden border-t border-slate-200 bg-gradient-to-b from-emerald-100/80 via-emerald-50/50 to-emerald-50/50 py-20 sm:py-28">
       <div className="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
         <div className="absolute left-1/2 top-1/2 h-[34rem] w-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-300/50 blur-[130px] animate-pulse-glow" />
       </div>
@@ -35,7 +35,7 @@ export default function SafetyHSE() {
         <Reveal className="mx-auto max-w-3xl text-center">
           <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-emerald-600">Calidad, Seguridad y Ambiente</p>
           <h2 className="mt-5 text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
-            <span className="text-gradient-eco">Ambientalmente Comprometidos.</span>
+            <span className="text-gradient-eco">Ambientalmente Comprometidos</span>
           </h2>
           <p className="mx-auto mt-7 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
             Implementamos un estricto Sistema de Gestión de Calidad (SGC) que garantiza la seguridad y salud laboral de

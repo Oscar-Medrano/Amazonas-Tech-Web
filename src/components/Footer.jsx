@@ -30,7 +30,7 @@ export default function Footer() {
               2004.
             </p>
             <p className="mt-6 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.25em] text-emerald-700">
-              Ambientalmente Comprometidos.
+              Ambientalmente Comprometidos
             </p>
             <p className="mt-5 text-xs font-medium uppercase tracking-[0.25em] text-slate-600">RIF: J-311095225-5</p>
           </div>
@@ -102,7 +102,7 @@ export default function Footer() {
           <p className="text-xs text-slate-600">
             © {CURRENT_YEAR} Amazonas Tech, C.A. · RIF: J-311095225-5 · Todos los derechos reservados.
           </p>
-          <p className="text-sm font-medium text-emerald-600">Ambientalmente Comprometidos.</p>
+          <p className="text-sm font-medium text-emerald-600">Ambientalmente Comprometidos</p>
         </div>
       </div>
     </footer>

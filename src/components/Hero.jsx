@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative overflow-hidden bg-gradient-to-br from-[#10254A] via-[#0A192F] to-[#081426] pb-24 pt-28 sm:pt-36 lg:pb-36 lg:pt-48"
+      className="relative overflow-hidden bg-gradient-to-br from-[#10254A] via-[#0A192F] to-[#081426] pb-20 pt-24 sm:pt-32 lg:pb-28 lg:pt-40"
       onMouseMove={handleMove}
       onMouseLeave={() => setGlow(null)}
     >
