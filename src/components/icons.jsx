@@ -23,15 +23,6 @@ export function IconMapPin({ className = 'h-4 w-4' }) {
   )
 }
 
-export function IconMail({ className = 'h-4 w-4' }) {
-  return (
-    <svg viewBox="0 0 24 24" className={className} aria-hidden="true" {...base}>
-      <rect x="2" y="4" width="20" height="16" rx="3" />
-      <path d="m2.5 7 8.4 5.6a2 2 0 0 0 2.2 0L21.5 7" />
-    </svg>
-  )
-}
-
 export function IconCheck({ className = 'h-4 w-4' }) {
   return (
     <svg viewBox="0 0 24 24" className={className} aria-hidden="true" {...base}>

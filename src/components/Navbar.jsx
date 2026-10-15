@@ -10,7 +10,7 @@ const NAV_LINKS = [
   { label: 'Empleo', href: '#empleo' },
 ]
 
-export default function Navbar({ onOpenContact }) {
+export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -51,12 +51,12 @@ export default function Navbar({ onOpenContact }) {
         >
           <Logo className="shrink-0" onNavigate={() => setMenuOpen(false)} />
 
-          <ul className="hidden flex-1 items-center justify-center gap-1 xl:flex">
+          <ul className="ml-auto hidden items-center gap-2.5 xl:flex">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="relative rounded-full px-4 py-2 text-[15px] font-bold text-black transition-all duration-300 ease-in-out hover:bg-slate-100 hover:text-emerald-700"
+                  className="btn-primary !px-6 !py-3 text-[14px]"
                 >
                   {link.label}
                 </a>
@@ -64,24 +64,15 @@ export default function Navbar({ onOpenContact }) {
             ))}
           </ul>
 
-          <div className="ml-auto flex shrink-0 items-center xl:ml-0">
-            <button
-              type="button"
-              onClick={onOpenContact}
-              className="btn-primary hidden !px-6 !py-2.5 !text-[13px] xl:inline-flex"
-            >
-              Solicitar Propuesta Técnica
-            </button>
-            <button
-              type="button"
-              onClick={() => setMenuOpen(true)}
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition-all duration-300 ease-in-out hover:border-emerald-300 hover:text-emerald-600 xl:hidden"
-              aria-label="Abrir menú"
-              aria-expanded={menuOpen}
-            >
-              <IconMenu />
-            </button>
-          </div>
+          <button
+            type="button"
+            onClick={() => setMenuOpen(true)}
+            className="ml-auto inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition-all duration-300 ease-in-out hover:border-emerald-300 hover:text-emerald-600 xl:hidden"
+            aria-label="Abrir menú"
+            aria-expanded={menuOpen}
+          >
+            <IconMenu />
+          </button>
         </nav>
       </header>
 
@@ -128,22 +119,12 @@ export default function Navbar({ onOpenContact }) {
           </ul>
 
           <div className="mt-auto pt-10">
-            <button
-              type="button"
-              onClick={() => {
-                setMenuOpen(false)
-                onOpenContact()
-              }}
-              className="btn-primary w-full !py-4 text-base"
-            >
-              Solicitar Propuesta Técnica
-            </button>
-            <div className="mt-6 flex flex-col gap-2 text-sm text-slate-600">
-              <p className="text-xs font-medium uppercase tracking-[0.25em] text-slate-500">Atención directa</p>
-              <a href="tel:+582913151712" className="flex items-center gap-2.5 transition-colors hover:text-emerald-600">
+            <p className="text-xs font-medium uppercase tracking-[0.25em] text-slate-500">Atención directa</p>
+            <div className="mt-3 flex flex-col gap-2 text-sm text-slate-600">
+              <a href="tel:+582913151712" className="transition-colors hover:text-emerald-600">
                 Sede Maturín — (0291) 315.17.12
               </a>
-              <a href="tel:+582832417694" className="flex items-center gap-2.5 transition-colors hover:text-emerald-600">
+              <a href="tel:+582832417694" className="transition-colors hover:text-emerald-600">
                 Base El Tigre — (0283) 241.76.94
               </a>
             </div>

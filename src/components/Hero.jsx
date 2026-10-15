@@ -56,11 +56,11 @@ export default function Hero() {
           </p>
 
           <h1 className="mt-8 text-4xl font-semibold leading-[1.08] tracking-tight sm:mt-10 sm:text-6xl lg:text-7xl xl:text-[5.25rem]">
-            <span className="block text-white animate-fade-up [animation-delay:100ms]">Ingeniería de Sólidos.</span>
+            <span className="block text-white animate-fade-up [animation-delay:100ms]">Ingeniería de Sólidos</span>
             <span className="block animate-fade-up [animation-delay:220ms] bg-gradient-to-r from-emerald-300 via-emerald-200 to-sky-200 bg-clip-text text-transparent">
-              Eficiencia Operativa.
+              Eficiencia Operativa
             </span>
-            <span className="block text-white animate-fade-up [animation-delay:340ms]">Compromiso Ambiental.</span>
+            <span className="block text-white animate-fade-up [animation-delay:340ms]">Compromiso Ambiental</span>
           </h1>
 
           <p className="mx-auto mt-7 max-w-2xl text-base leading-relaxed text-emerald-50/90 animate-fade-up [animation-delay:440ms] sm:text-lg lg:text-xl">

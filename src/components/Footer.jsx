@@ -18,7 +18,7 @@ const COMPANY_LINKS = [
   { label: 'Empleo', href: '#empleo' },
 ]
 
-export default function Footer({ onOpenContact }) {
+export default function Footer() {
   return (
     <footer id="contacto" className="relative border-t border-slate-200 bg-white">
       <div className="mx-auto max-w-7xl px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
@@ -64,15 +64,6 @@ export default function Footer({ onOpenContact }) {
                   </a>
                 </li>
               ))}
-              <li>
-                <button
-                  type="button"
-                  onClick={onOpenContact}
-                  className="text-sm text-slate-600 transition-colors duration-300 ease-in-out hover:text-emerald-600"
-                >
-                  Solicitar Propuesta Técnica
-                </button>
-              </li>
             </ul>
           </div>
 

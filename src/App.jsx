@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Stats from './components/Stats'
@@ -9,15 +8,9 @@ import Clients from './components/Clients'
 import SafetyHSE from './components/SafetyHSE'
 import Locations from './components/Locations'
 import Empleo from './components/Empleo'
-import CtaBand from './components/CtaBand'
 import Footer from './components/Footer'
-import ContactModal from './components/ContactModal'
 
 export default function App() {
-  const [contactOpen, setContactOpen] = useState(false)
-  const openContact = () => setContactOpen(true)
-  const closeContact = () => setContactOpen(false)
-
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-slate-50">
       <a
@@ -27,7 +20,7 @@ export default function App() {
         Saltar al contenido
       </a>
 
-      <Navbar onOpenContact={openContact} />
+      <Navbar />
 
       <main>
         <Hero />
@@ -38,13 +31,10 @@ export default function App() {
         <Clients />
         <SafetyHSE />
         <Locations />
-        <CtaBand onOpenContact={openContact} />
         <Empleo />
       </main>
 
-      <Footer onOpenContact={openContact} />
-
-      <ContactModal open={contactOpen} onClose={closeContact} />
+      <Footer />
     </div>
   )
 }

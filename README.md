@@ -39,7 +39,8 @@ src/
     Clients.jsx          # Empresas aliadas
     SafetyHSE.jsx        # Calidad, Seguridad y Ambiente
     Locations.jsx        # Sedes Maturín y El Tigre con Google Maps embebido
-    CtaBand.jsx / Footer.jsx / ContactModal.jsx
+    Empleo.jsx           # Sección Empleo con enlace a LinkedIn
+    Footer.jsx contacts: direcciones y teléfonos
   hooks/useReveal.js    # revelado suave al hacer scroll
 ```
 
