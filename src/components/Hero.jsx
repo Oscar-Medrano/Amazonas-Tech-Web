@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative overflow-hidden bg-gradient-to-br from-[#10254A] via-[#0A192F] to-[#081426] pb-20 pt-24 sm:pt-32 lg:pb-28 lg:pt-40"
+      className="relative overflow-hidden bg-gradient-to-br from-[#10254A] via-[#0A192F] to-[#081426] pb-32 pt-24 sm:pt-32 lg:pb-48 lg:pt-40"
       onMouseMove={handleMove}
       onMouseLeave={() => setGlow(null)}
     >
@@ -51,11 +51,7 @@ export default function Hero() {
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <p className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-5 py-2 text-xs font-medium uppercase tracking-[0.25em] text-emerald-100 shadow-sm backdrop-blur-md animate-fade-in sm:text-[13px]">
-            Amazonas Tech, C.A. · RIF: J-311095225-5
-          </p>
-
-          <h1 className="mt-8 text-4xl font-semibold leading-[1.08] tracking-tight sm:mt-10 sm:text-6xl lg:text-7xl xl:text-[5.25rem]">
+          <h1 className="text-4xl font-semibold leading-[1.08] tracking-tight sm:text-6xl lg:text-7xl xl:text-[5.25rem]">
             <span className="block text-white animate-fade-up [animation-delay:100ms]">Ingeniería de Sólidos</span>
             <span className="block animate-fade-up [animation-delay:220ms] bg-gradient-to-r from-emerald-300 via-emerald-200 to-sky-200 bg-clip-text text-transparent">
               Eficiencia Operativa
@@ -63,7 +59,7 @@ export default function Hero() {
             <span className="block text-white animate-fade-up [animation-delay:340ms]">Compromiso Ambiental</span>
           </h1>
 
-          <p className="mx-auto mt-7 max-w-2xl text-base leading-relaxed text-emerald-50/90 animate-fade-up [animation-delay:440ms] sm:text-lg lg:text-xl">
+          <p className="mx-auto mt-10 max-w-2xl text-base leading-relaxed text-emerald-50/90 animate-fade-up [animation-delay:440ms] sm:text-lg lg:text-xl">
             Desde 2004, liderando la gestión integral de fluidos, separación de sólidos y manejo de desechos en la
             Faja Petrolífera del Orinoco y la industria nacional.
           </p>
@@ -79,7 +75,7 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="mt-14 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-[11px] font-medium uppercase tracking-[0.25em] text-white/70 animate-fade-up [animation-delay:700ms] sm:text-xs">
+          <div className="mt-16 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-[11px] font-medium uppercase tracking-[0.25em] text-white/70 animate-fade-up [animation-delay:700ms] sm:text-xs">
             <span>Maturín</span>
             <span className="h-1 w-1 rounded-full bg-emerald-300" />
             <span>El Tigre</span>

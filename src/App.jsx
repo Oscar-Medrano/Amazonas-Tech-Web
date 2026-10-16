@@ -26,8 +26,8 @@ export default function App() {
         <Hero />
         <Stats />
         <About />
-        <TechSpecs />
         <Marquee />
+        <TechSpecs />
         <Clients />
         <SafetyHSE />
         <Locations />
