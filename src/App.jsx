@@ -8,6 +8,7 @@ import Clients from './components/Clients'
 import SafetyHSE from './components/SafetyHSE'
 import Locations from './components/Locations'
 import Empleo from './components/Empleo'
+import Instagram from './components/Instagram'
 import Footer from './components/Footer'
 
 export default function App() {
@@ -22,17 +23,18 @@ export default function App() {
 
       <Navbar />
 
-      <main>
-        <Hero />
-        <Stats />
-        <About />
-        <Marquee />
-        <TechSpecs />
-        <Clients />
-        <SafetyHSE />
-        <Locations />
-        <Empleo />
-      </main>
+       <main>
+         <Hero />
+         <Stats />
+         <About />
+         <Marquee />
+         <TechSpecs />
+         <Clients />
+         <SafetyHSE />
+         <Locations />
+         <Empleo />
+         <Instagram />
+       </main>
 
       <Footer />
     </div>

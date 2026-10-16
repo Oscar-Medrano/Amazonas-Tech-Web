@@ -33,7 +33,7 @@ export default function About() {
               <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-emerald-600">Nosotros</p>
               <h2 className="mt-5 text-3xl font-semibold leading-[1.12] tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
                 Dos décadas al servicio de la{' '}
-                <span className="text-gradient-eco">industria energética nacional</span>.
+                <span className="text-gradient-eco">industria petrolera nacional</span>
               </h2>
               <p className="mt-6 max-w-xl text-base leading-relaxed text-slate-600 sm:text-lg">
                 Amazonas Tech, C.A. es una organización venezolana líder en la prestación de servicios a pozos,

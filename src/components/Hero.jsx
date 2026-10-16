@@ -75,12 +75,8 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="mt-16 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-[11px] font-medium uppercase tracking-[0.25em] text-white/70 animate-fade-up [animation-delay:700ms] sm:text-xs">
-            <span>Maturín</span>
-            <span className="h-1 w-1 rounded-full bg-emerald-300" />
-            <span>El Tigre</span>
-            <span className="h-1 w-1 rounded-full bg-emerald-300" />
-            <span>Faja Petrolífera del Orinoco</span>
+          <div className="relative mx-auto mt-16 inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-emerald-200/70 bg-white/10 px-6 py-3 text-sm font-medium text-emerald-200/70 backdrop-blur-lg shadow-sm transition-all duration-300 ease-in-out sm:w-auto animate-fade-up [animation-delay:680ms]">
+            Ambientalmente Comprometidos
           </div>
         </div>
       </div>
