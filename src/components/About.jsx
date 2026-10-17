@@ -46,7 +46,7 @@ export default function About() {
             <Reveal delay={140} className="mt-10">
               <div className="group relative overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white shadow-soft">
                 <img
-                  src="/img/equipo-especializado.jpg"
+                  src="/img/taladro.jpeg"
                   alt="Equipamiento especializado de Amazonas Tech: unidad de zarandas vibratorias en planta de procesos"
                   width={587}
                   height={543}
@@ -55,9 +55,6 @@ export default function About() {
                   className="aspect-[4/3] w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.03]"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
-                <p className="absolute bottom-5 left-6 text-xs font-medium uppercase tracking-[0.25em] text-white">
-                  Equipamiento propio · Campo verificable
-                </p>
               </div>
             </Reveal>
           </div>

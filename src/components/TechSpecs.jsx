@@ -9,13 +9,13 @@ const TABS = [
     image: '/img/control-de-solidos.jpg',
     alt: 'Zarandas vibradoras y línea de control de sólidos operando en locación petrolera',
     title: 'Control de Sólidos en Perforación',
-    text: 'Sistemas mecánicos de alta eficiencia para la separación de fase sólida-líquida. Optimización del fluido de perforación, reducción del desgaste de barrenas y minimización del volumen de desechos en fosa.',
+    text: 'Tecnología avanzada para la remoción eficiente de fases sólidas en fluidos de perforación, reduciendo costos operativos y minimizando el impacto en fosa.',
     equipos: ['Mallas Zarandas (Shakers)', 'Desarenadores', 'Deslimadores', 'Centrífugas de alta velocidad', 'Unidades de Vaciado (Vacuum Trucks)'],
     specs: [
-      'Separación sólido-líquido de alta eficiencia',
-      'Optimización continua del fluido de perforación',
-      'Reducción del desgaste de barrenas y herramienta de fondo',
-      'Minimización del volumen de desechos en fosa',
+      'Recuperación y re-acondicionamiento continuo del lodo de perforación.',
+      'Protección de la sarta de perforación y reducción del desgaste en mechas/barrenas.',
+      'Disminución significativa del volumen total de desechos generados.',
+      'Mantenimiento de las propiedades reológicas óptimas en pozo.',
     ],
   },
   {
@@ -23,14 +23,14 @@ const TABS = [
     label: 'Servicios Ambientales',
     image: '/img/servicios-ambientales.jpg',
     alt: 'Operaciones de manejo ambiental y tratamiento de desechos de Amazonas Tech',
-    title: 'Servicios Ambientales Integrales',
-    text: 'Tratamiento, remediación e inyección de ripios y lodos de perforación cumpliendo con las normativas ambientales técnicas y legales vigentes.',
-    equipos: ['Centro de Manejo de Desechos', 'Centro Palmoriche', 'Tratamiento de ripios y lodos', 'Remediación de zonas afectadas', 'Inyección controlada'],
+    title: 'Servicios Ambientales',
+    text: 'Gestión ecológica e integral de desechos petroleros bajo estrictos estándares internacionales y cumplimiento normativo legal vigente.',
+    equipos: ['Centro de Manejo de Desechos', 'Centro Palmoriche', 'Mud Cleaners', 'Tratamiento de Ripios y Lodos', 'Remediación de Zonas Afectadas', 'Inyección Controlada'],
     specs: [
-      'Tratamiento técnico de ripios y lodos de perforación',
-      'Remediación de áreas intervenidas',
-      'Inyección en formaciones autorizadas',
-      'Cumplimiento normativo ambiental verificable',
+      'Disposición final y neutralización segura de efluentes e hidrocarburos.',
+      'Reintegración y restauración de suelos intervenidos por la actividad operacional.',
+      'Operaciones avaladas por permisos y regulaciones del Ministerio del Poder Popular para el Ecosocialismo (MINEC).',
+      'Inyección segura en formaciones profundas autorizadas sin riesgo de contaminación.',
     ],
   },
   {
@@ -39,8 +39,8 @@ const TABS = [
     image: '/img/flota.jpg',
     alt: 'Flota de unidades vacuum y camiones de Amazonas Tech en base operativa',
     title: 'Flota Especializada',
-    text: 'Flota pesada propia y equipamiento de última generación —mud cleaners, distribuidores de fluidos y unidades de vacío— que garantizan capacidad de respuesta inmediata en cada locación.',
-    equipos: ['Mud Cleaners', 'Distribuidores de Fluidos', 'Unidades Vacuum', 'Camiones Cisterna', 'Volquetas'],
+    text: 'Flota pesada propia y equipamiento de última generación que garantizan capacidad de respuesta inmediata en cada locación.',
+    equipos: ['Distribuidores de Fluidos', 'Unidades Vacuum', 'Camiones Cisterna', 'Volquetas'],
     specs: [
       'Equipos propios listos para movilización',
       'Distribución y control de fluidos en locación',
@@ -54,28 +54,28 @@ const TABS = [
     image: '/img/acondicionamiento-terreno.jpg',
     alt: 'Acondicionamiento de terreno para localización petrolera ejecutado por Amazonas Tech',
     title: 'Obras Civiles Petroleras',
-    text: 'Adecuación de localizaciones, construcción de fosas, acondicionamiento de accesos y movimiento de tierra con maquinaria propia y cuadrillas especializadas.',
-    equipos: ['Adecuación de localizaciones', 'Construcción de fosas', 'Acondicionamiento de accesos', 'Movimiento de tierra', 'Cuadrillas especializadas'],
+    text: 'Infraestructura y preparación de terrenos con ingeniería de precisión para garantizar la operatividad de los campos petroleros.',
+    equipos: ['Adecuación de localizaciones', 'Saneamiento de fosas', 'Acondicionamiento de accesos', 'Movimiento de tierra', 'Cuadrillas especializadas'],
     specs: [
       'Preparación de locaciones para perforación',
-      'Construcción y mantenimiento de fosas',
+      'Mantenimiento de fosas',
       'Acondicionamiento de vías de acceso',
       'Movimiento de tierra con equipos propios',
     ],
   },
   {
     id: 'soldadura',
-    label: 'Soldadura y Metalmecánica',
+    label: 'Soldadura Especializada',
     image: '/img/soldadura-industrial.jpg',
-    alt: 'Trabajos de soldadura industrial en tuberías y estructuras metálicas de Amazonas Tech',
-    title: 'Soldadura y Metalmecánica Industrial',
-    text: 'Calificación formal de procedimientos de soldadura (WPS/PQR) aplicada a tuberías, tanques y estructuras de alta presión, con trazabilidad documental completa.',
-    equipos: ['Procedimientos WPS / PQR', 'Tuberías de alta presión', 'Tanques', 'Estructuras metálicas', 'Soldadores calificados'],
+    alt: 'Trabajos de soldadura especializada en tuberías y estructuras metálicas de Amazonas Tech',
+    title: 'Soldadura Especializada',
+    text: 'Servicios de soldadura de alta precisión para la industria energética, garantizando máxima integridad estructural en tuberías y recipientes bajo condiciones críticas de presión.',
+    equipos: ['Procedimientos WPS / PQR', 'Soldadores Calificados y Certificados', 'Tuberías de Alta Presión', 'Ensayos No Destructivos (NDT)', 'Equipos de Soldadura TIG / MIG / SMAW'],
     specs: [
-      'Calificación de procedimientos de soldadura',
-      'Instalación de tuberías y spools en campo',
-      'Fabricación y reparación de tanques',
-      'Estructuras metálicas de alta exigencia',
+      'Calificación formal de procedimientos de soldadura (WPS/PQR) respaldada por normas internacionales.',
+      'Ejecución de uniones de alta exigencia en spools, líneas de flujo y sistemas de tuberías.',
+      'Inspección de calidad mediante ensayos no destructivos (tintas penetrantes, ultrasonido, radiografía).',
+      'Trazabilidad documental detallada y dossiers técnicos listos para auditoría de campo.',
     ],
   },
 ]
@@ -106,7 +106,7 @@ export default function TechSpecs() {
 
         <Reveal delay={120} className="mt-12 flex justify-center">
           <div className="w-full max-w-3xl rounded-2xl border border-slate-200 bg-slate-100 p-2 shadow-inner sm:rounded-full sm:p-1.5">
-            <div className="grid grid-cols-2 gap-1.5 sm:flex sm:flex-wrap sm:items-center sm:justify-center">
+            <div className="grid max-sm:grid-cols-1 grid-cols-2 gap-1.5 sm:flex sm:flex-wrap sm:items-center sm:justify-center">
               {TABS.map((item, index) => (
                 <button
                   key={item.id}
@@ -114,7 +114,7 @@ export default function TechSpecs() {
                   onClick={() => setActive(index)}
                   aria-pressed={active === index}
                   className={`whitespace-nowrap rounded-xl px-4 py-3 text-center text-[13px] font-semibold transition-all duration-300 ease-in-out sm:rounded-full sm:px-5 sm:py-2.5 ${
-                    index === TABS.length - 1 ? 'col-span-2 sm:col-span-1' : ''
+                    index === TABS.length - 1 ? 'max-sm:col-span-1 col-span-2 sm:col-span-1' : ''
                   } ${
                     active === index
                       ? 'bg-white text-emerald-700 shadow-sm ring-1 ring-slate-200'
@@ -141,7 +141,6 @@ export default function TechSpecs() {
             />
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent" />
             <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-emerald-300">{tab.label}</p>
               <p className="mt-2 text-lg font-semibold tracking-tight text-white sm:text-xl">{tab.title}</p>
             </div>
           </div>

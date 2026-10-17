@@ -2,7 +2,6 @@ import Reveal from './Reveal'
 
 const LOGOS = [
   { src: '/img/pdvsa.webp', alt: 'PDVSA' },
-  { src: '/img/schlumberger.png', alt: 'Schlumberger' },
   { src: '/img/nabep.webp', alt: 'North American Blue Energy Partners' },
   { src: '/img/slb-logo.png', alt: 'SLB' },
   { src: '/img/chevron-logo.png', alt: 'Chevron' },

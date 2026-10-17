@@ -35,7 +35,7 @@ export default function SafetyHSE() {
         <Reveal className="mx-auto max-w-3xl text-center">
           <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-emerald-600">Calidad, Seguridad y Ambiente</p>
           <h2 className="mt-5 text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
-            <span className="relative inline-flex items-center justify-center gap-2 rounded-2xl border border-emerald-200/70 bg-white/10 px-6 py-3 backdrop-blur-lg shadow-sm text-emerald-700">Ambientalmente Comprometidos</span>
+            <span className="text-gradient-eco">Ambientalmente Comprometidos</span>
           </h2>
           <p className="mx-auto mt-7 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
             Implementamos un estricto Sistema de Gestión de Calidad (SGC) que garantiza la seguridad y salud laboral de

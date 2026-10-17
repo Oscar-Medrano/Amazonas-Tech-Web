@@ -8,7 +8,7 @@ const SERVICES_LINKS = [
   { label: 'Servicios Ambientales', href: '#servicios' },
   { label: 'Flota Especializada', href: '#servicios' },
   { label: 'Obras Civiles Petroleras', href: '#servicios' },
-  { label: 'Soldadura y Metalmecánica', href: '#servicios' },
+  { label: 'Soldadura Especializada', href: '#servicios' },
 ]
 
 const COMPANY_LINKS = [
