@@ -17,7 +17,7 @@ export default function Marquee() {
               {IMAGES.map((image) => (
                 <figure
                   key={`${copy}-${image.src}`}
-                  className="group relative h-40 w-64 shrink-0 overflow-hidden rounded-2xl border border-slate-200 shadow-soft transition-all duration-300 ease-in-out hover:-translate-y-1 hover:border-emerald-200 hover:shadow-soft-lg sm:h-52 sm:w-80"
+                  className="group relative h-40 w-64 shrink-0 overflow-hidden rounded-2xl border border-slate-200 shadow-soft transition-all duration-300 ease-in-out hover:-translate-y-1 hover:border-green-200 hover:shadow-soft-lg sm:h-52 sm:w-80"
                 >
                   <img
                     src={image.src}

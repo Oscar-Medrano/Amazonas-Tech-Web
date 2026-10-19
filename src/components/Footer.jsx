@@ -32,13 +32,13 @@ export default function Footer() {
             </div>
 
           <div>
-            <h3 className="text-[11px] font-semibold uppercase tracking-[0.3em] text-emerald-600">Servicios</h3>
+            <h3 className="text-[11px] font-semibold uppercase tracking-[0.3em] text-green-600">Servicios</h3>
             <ul className="mt-5 space-y-3">
               {SERVICES_LINKS.map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-sm text-slate-600 transition-colors duration-300 ease-in-out hover:text-emerald-600"
+                    className="text-sm text-slate-600 transition-colors duration-300 ease-in-out hover:text-green-600"
                   >
                     {link.label}
                   </a>
@@ -48,13 +48,13 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-[11px] font-semibold uppercase tracking-[0.3em] text-emerald-600">Empresa</h3>
+            <h3 className="text-[11px] font-semibold uppercase tracking-[0.3em] text-green-600">Empresa</h3>
             <ul className="mt-5 space-y-3">
               {COMPANY_LINKS.map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-sm text-slate-600 transition-colors duration-300 ease-in-out hover:text-emerald-600"
+                    className="text-sm text-slate-600 transition-colors duration-300 ease-in-out hover:text-green-600"
                   >
                     {link.label}
                   </a>
@@ -64,26 +64,26 @@ export default function Footer() {
           </div>
 
             <div>
-              <h3 className="text-[11px] font-semibold uppercase tracking-[0.3em] text-emerald-600">Contacto</h3>
+              <h3 className="text-[11px] font-semibold uppercase tracking-[0.3em] text-green-600">Contacto</h3>
               <ul className="mt-5 space-y-4 text-sm text-slate-600">
                 <li className="flex gap-3">
-                  <IconMapPin className="mt-0.5 h-4 w-4 shrink-0 text-emerald-500" />
+                  <IconMapPin className="mt-0.5 h-4 w-4 shrink-0 text-green-500" />
                   <span className="leading-relaxed">
                     Sede Maturín: Calle 6, Parcela 6, Mz. 8, Galpón 4, Zona Industrial, Monagas.
                   </span>
                 </li>
                 <li className="flex gap-3">
-                  <IconMapPin className="mt-0.5 h-4 w-4 shrink-0 text-emerald-500" />
+                  <IconMapPin className="mt-0.5 h-4 w-4 shrink-0 text-green-500" />
                   <span className="leading-relaxed">
                     Base El Tigre: C.C. Rahme, Av. Internacional, Local G 05-06, Anzoátegui.
                   </span>
                 </li>
                 <li className="flex gap-3">
-                  <IconPhone className="mt-0.5 h-4 w-4 shrink-0 text-emerald-500" />
+                  <IconPhone className="mt-0.5 h-4 w-4 shrink-0 text-green-500" />
                   <span className="leading-relaxed">
-                    <a href="tel:+582913151712" className="transition-colors hover:text-emerald-600">(0291) 315.17.12</a>
+                    <a href="tel:+582913151712" className="transition-colors hover:text-green-600">(0291) 315.17.12</a>
                     {' · '}
-                    <a href="tel:+582832417694" className="transition-colors hover:text-emerald-600">(0283) 241.76.94</a>
+                    <a href="tel:+582832417694" className="transition-colors hover:text-green-600">(0283) 241.76.94</a>
                   </span>
                 </li>
               </ul>
@@ -94,7 +94,7 @@ export default function Footer() {
           <p className="text-xs text-slate-600">
             © {CURRENT_YEAR} Amazonas Tech, C.A. · RIF: J-311095225-5 · Todos los derechos reservados.
           </p>
-          <p className="inline-flex items-center gap-2 rounded-2xl border border-emerald-200/70 bg-white/10 px-4 py-2 text-sm font-medium text-emerald-700 backdrop-blur-lg shadow-sm">Ambientalmente Comprometidos</p>
+          <p className="inline-flex items-center gap-2 rounded-2xl border border-green-200/70 bg-white/10 px-4 py-2 text-sm font-medium text-green-700 backdrop-blur-lg shadow-sm">Ambientalmente Comprometidos</p>
         </div>
       </div>
     </footer>

@@ -107,15 +107,15 @@ export default function TechSpecs() {
   const tab = TABS[active]
 
   return (
-    <section id="servicios" className="relative overflow-hidden border-t border-slate-200 bg-gradient-to-b from-emerald-100/80 via-emerald-50/50 to-emerald-50/50 py-20 sm:py-28">
+    <section id="servicios" className="relative overflow-hidden border-t border-slate-200 bg-gradient-to-b from-green-100/80 via-green-50/50 to-green-50/50 py-20 sm:py-28">
       <div className="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
         <div className="absolute inset-0 grid-lines opacity-40" />
-        <div className="absolute left-1/2 top-1/2 h-[34rem] w-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-300/50 blur-[130px] animate-pulse-glow" />
+        <div className="absolute left-1/2 top-1/2 h-[34rem] w-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-green-300/50 blur-[130px] animate-pulse-glow" />
       </div>
 
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <Reveal className="mx-auto max-w-3xl text-center">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-emerald-600">Portafolio</p>
+          <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-green-600">Portafolio</p>
           <h2 className="mt-5 text-3xl font-semibold leading-[1.12] tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
             Servicios <span className="text-gradient-titanium">Integrales</span>
           </h2>
@@ -139,7 +139,7 @@ export default function TechSpecs() {
                     index === TABS.length - 1 ? 'max-sm:col-span-1 col-span-2 sm:col-span-1' : ''
                   } ${
                     active === index
-                      ? 'bg-white text-emerald-700 shadow-sm ring-1 ring-slate-200'
+                      ? 'bg-white text-green-700 shadow-sm ring-1 ring-slate-200'
                       : 'text-slate-600 hover:text-slate-900'
                   }`}
                 >
@@ -170,14 +170,14 @@ export default function TechSpecs() {
           <div className="flex flex-col justify-center">
             <p className="text-base leading-relaxed text-slate-600 sm:text-lg">{tab.text}</p>
 
-            <h3 className="mt-9 text-[11px] font-semibold uppercase tracking-[0.3em] text-emerald-600">
+            <h3 className="mt-9 text-[11px] font-semibold uppercase tracking-[0.3em] text-green-600">
               {tab.id === 'ambiental' ? 'Instalaciones & Capacidades' : 'Equipos & Tecnología'}
             </h3>
             <ul className="mt-4 flex flex-wrap gap-2.5">
               {tab.equipos.map((item) => (
                 <li
                   key={item}
-                  className="rounded-full border border-slate-200 bg-white px-4 py-2 text-[13px] font-medium text-slate-700 shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:border-emerald-300 hover:text-emerald-700"
+                  className="rounded-full border border-slate-200 bg-white px-4 py-2 text-[13px] font-medium text-slate-700 shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:border-green-300 hover:text-green-700"
                 >
                   {item}
                 </li>
@@ -187,7 +187,7 @@ export default function TechSpecs() {
             <ul className="mt-9 grid gap-3.5 sm:grid-cols-2">
               {tab.specs.map((spec) => (
                 <li key={spec} className="flex items-start gap-3.5 text-[15px] leading-relaxed text-slate-600">
-                  <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-emerald-600 to-emerald-500 text-white shadow-soft transition-all duration-300 ease-in-out hover:from-emerald-500 hover:to-emerald-400">
+                  <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-green-600 to-green-500 text-white shadow-soft transition-all duration-300 ease-in-out hover:from-green-500 hover:to-green-400">
                     <IconCheck className="h-3.5 w-3.5" />
                   </span>
                   {spec}

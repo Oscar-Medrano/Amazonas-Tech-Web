@@ -21,16 +21,16 @@ const PILLARS = [
 
 export default function About() {
   return (
-    <section id="nosotros" className="relative overflow-hidden border-t border-slate-200 bg-gradient-to-b from-emerald-100/80 via-emerald-50/50 to-emerald-50/50 py-20 sm:py-28">
+    <section id="nosotros" className="relative overflow-hidden border-t border-slate-200 bg-gradient-to-b from-green-100/80 via-green-50/50 to-green-50/50 py-20 sm:py-28">
       <div className="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
-        <div className="absolute left-1/2 top-1/2 h-[34rem] w-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-300/50 blur-[130px] animate-pulse-glow" />
+        <div className="absolute left-1/2 top-1/2 h-[34rem] w-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-green-300/50 blur-[130px] animate-pulse-glow" />
       </div>
 
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <div className="grid gap-14 lg:grid-cols-[1fr_1.15fr] lg:gap-20">
           <div className="lg:sticky lg:top-28 lg:self-start">
             <Reveal>
-              <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-emerald-600">Nosotros</p>
+              <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-green-600">Nosotros</p>
               <h2 className="mt-5 text-3xl font-semibold leading-[1.12] tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
                 Dos décadas al servicio de la{' '}
                 <span className="text-gradient-eco">industria petrolera nacional</span>

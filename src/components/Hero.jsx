@@ -27,12 +27,12 @@ export default function Hero() {
             className="mx-auto w-full max-w-xs sm:max-w-md md:max-w-xl lg:max-w-2xl animate-fade-up [animation-delay:100ms]"
           />
 
-          <div className="relative mx-auto mt-8 inline-flex w-full items-center justify-center gap-2 rounded-2xl px-6 py-3 text-xl sm:text-2xl font-bold transition-all duration-300 ease-in-out sm:w-auto animate-fade-up [animation-delay:680ms] bg-gradient-to-r from-emerald-300 via-emerald-200 to-emerald-500 bg-clip-text text-transparent [text-shadow:0_2px_40px_rgba(16,185,129,0.45)]">
+          <div className="relative mx-auto mt-8 inline-flex w-full items-center justify-center gap-2 rounded-2xl px-6 py-3 text-xl sm:text-2xl font-bold transition-all duration-300 ease-in-out sm:w-auto animate-fade-up [animation-delay:680ms] bg-gradient-to-r from-green-300 via-green-200 to-green-600 bg-clip-text text-transparent [text-shadow:0_2px_40px_rgba(0,168,0,0.45)]">
             Ambientalmente Comprometidos
           </div>
 
           <p className="mx-auto mt-10 max-w-3xl text-xl leading-relaxed sm:text-2xl lg:text-3xl text-white font-bold animate-fade-up [animation-delay:440ms] [text-shadow:0_2px_40px_rgba(0,0,0,0.6)]">
-            Desde 2004, liderando la gestión integral de fluidos, separación de sólidos y manejo de desechos en la
+            Desde 2004, liderando el control integral de fluidos, separación de sólidos y manejo de desechos en la
             Faja Petrolífera del Orinoco y la industria nacional.
           </p>
 

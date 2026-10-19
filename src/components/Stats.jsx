@@ -15,8 +15,8 @@ export default function Stats() {
           {STATS.map((stat, index) => (
             <Reveal key={stat.label} delay={index * 90}>
               <div className="group relative transition-all duration-300 ease-in-out">
-                <div className="absolute -inset-3 rounded-2xl bg-gradient-to-b from-emerald-50 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" aria-hidden="true" />
-                <dt className="relative text-[11px] font-medium uppercase tracking-[0.25em] text-emerald-600">
+                <div className="absolute -inset-3 rounded-2xl bg-gradient-to-b from-green-50 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" aria-hidden="true" />
+                <dt className="relative text-[11px] font-medium uppercase tracking-[0.25em] text-green-600">
                   {stat.label}
                 </dt>
                 <dd className="relative mt-3 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">

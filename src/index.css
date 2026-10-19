@@ -55,7 +55,7 @@
   }
 
   :focus-visible {
-    @apply outline-none ring-2 ring-emerald-500/60 ring-offset-2 ring-offset-white;
+    @apply outline-none ring-2 ring-green-500/60 ring-offset-2 ring-offset-white;
   }
 
   ::selection {
@@ -108,7 +108,7 @@
   }
 
   .text-gradient-eco {
-    @apply bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-green-600 via-green-500 to-teal-600 bg-clip-text text-transparent;
   }
 
   .text-gradient-titanium {
@@ -167,11 +167,11 @@
 
 @layer components {
   .btn-primary {
-    @apply relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-emerald-600 to-emerald-500 px-7 py-3.5 text-sm font-semibold text-white shadow-soft transition-all duration-300 ease-in-out;
+    @apply relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-green-600 to-green-500 px-7 py-3.5 text-sm font-semibold text-white shadow-soft transition-all duration-300 ease-in-out;
   }
 
   .btn-primary:hover {
-    @apply -translate-y-0.5 from-emerald-500 to-emerald-400 shadow-soft-lg;
+    @apply -translate-y-0.5 from-green-500 to-green-400 shadow-soft-lg;
   }
 
   .btn-primary:active {
@@ -193,7 +193,7 @@
   }
 
   .btn-secondary:hover {
-    @apply -translate-y-0.5 border-emerald-400 bg-emerald-50 text-emerald-700;
+    @apply -translate-y-0.5 border-green-400 bg-green-50 text-green-700;
   }
 
   .btn-secondary:active {
@@ -205,7 +205,7 @@
   }
 
   .btn-glass:hover {
-    @apply -translate-y-0.5 border-emerald-300/70 bg-emerald-400/15 text-emerald-100;
+    @apply -translate-y-0.5 border-green-300/70 bg-green-400/15 text-green-100;
   }
 
   .btn-glass:active {
@@ -221,6 +221,6 @@
   }
 
   .field-input:focus {
-    @apply border-emerald-500 outline-none ring-2 ring-emerald-500/25;
+    @apply border-green-500 outline-none ring-2 ring-green-500/25;
   }
 }

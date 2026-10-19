@@ -67,7 +67,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setMenuOpen(true)}
-            className="ml-auto inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition-all duration-300 ease-in-out hover:border-emerald-300 hover:text-emerald-600 lg:hidden"
+            className="ml-auto inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition-all duration-300 ease-in-out hover:border-green-300 hover:text-green-600 lg:hidden"
             aria-label="Abrir menú"
             aria-expanded={menuOpen}
           >
@@ -91,7 +91,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => setMenuOpen(false)}
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition-all duration-300 ease-in-out hover:border-emerald-300 hover:text-emerald-600"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition-all duration-300 ease-in-out hover:border-green-300 hover:text-green-600"
               aria-label="Cerrar menú"
             >
               <IconClose />
@@ -110,7 +110,7 @@ export default function Navbar() {
                 <a
                   href={link.href}
                   onClick={() => setMenuOpen(false)}
-                  className="block border-b border-slate-100 py-4 text-3xl font-semibold tracking-tight text-slate-900 transition-colors duration-300 hover:text-emerald-600"
+                  className="block border-b border-slate-100 py-4 text-3xl font-semibold tracking-tight text-slate-900 transition-colors duration-300 hover:text-green-600"
                 >
                   {link.label}
                 </a>
@@ -121,10 +121,10 @@ export default function Navbar() {
           <div className="mt-auto pt-10">
             <p className="text-xs font-medium uppercase tracking-[0.25em] text-slate-500">Atención directa</p>
             <div className="mt-3 flex flex-col gap-2 text-sm text-slate-600">
-              <a href="tel:+582913151712" className="transition-colors hover:text-emerald-600">
+              <a href="tel:+582913151712" className="transition-colors hover:text-green-600">
                 Sede Maturín — (0291) 315.17.12
               </a>
-              <a href="tel:+582832417694" className="transition-colors hover:text-emerald-600">
+              <a href="tel:+582832417694" className="transition-colors hover:text-green-600">
                 Base El Tigre — (0283) 241.76.94
               </a>
             </div>

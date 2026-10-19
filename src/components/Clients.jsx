@@ -12,14 +12,14 @@ const LOGOS = [
 
 export default function Clients() {
   return (
-    <section className="relative overflow-hidden border-t border-slate-200 bg-gradient-to-b from-emerald-100/80 via-emerald-50/50 to-emerald-50/50 py-16 sm:py-20">
+    <section className="relative overflow-hidden border-t border-slate-200 bg-gradient-to-b from-green-100/80 via-green-50/50 to-green-50/50 py-16 sm:py-20">
       <div className="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
-        <div className="absolute left-1/2 top-1/2 h-[30rem] w-[30rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-300/50 blur-[130px] animate-pulse-glow" />
+        <div className="absolute left-1/2 top-1/2 h-[30rem] w-[30rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-green-300/50 blur-[130px] animate-pulse-glow" />
       </div>
 
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <Reveal className="mx-auto max-w-2xl text-center">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-emerald-600">Confianza de la Industria</p>
+          <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-green-600">Confianza de la Industria</p>
           <h2 className="mt-5 text-2xl font-semibold leading-[1.15] tracking-tight text-slate-900 sm:text-3xl lg:text-4xl">
             Operadores y contratistas que <span className="text-gradient-eco">confían en nuestra operación</span>
           </h2>
@@ -37,7 +37,7 @@ export default function Clients() {
                 {LOGOS.map((logo) => (
                   <figure
                     key={`${copy}-${logo.src}`}
-                    className="group flex h-28 w-60 shrink-0 items-center justify-center rounded-2xl border border-slate-200 bg-white p-7 shadow-soft transition-all duration-300 ease-in-out hover:-translate-y-1 hover:border-emerald-200 hover:shadow-soft-lg sm:h-32 sm:w-72"
+                    className="group flex h-28 w-60 shrink-0 items-center justify-center rounded-2xl border border-slate-200 bg-white p-7 shadow-soft transition-all duration-300 ease-in-out hover:-translate-y-1 hover:border-green-200 hover:shadow-soft-lg sm:h-32 sm:w-72"
                   >
                     <img
                       src={logo.src}

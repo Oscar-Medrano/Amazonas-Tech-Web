@@ -28,13 +28,13 @@ const LOCATIONS = [
 
 export default function Locations() {
   return (
-    <section id="ubicaciones" className="relative overflow-hidden border-t border-slate-200 bg-gradient-to-b from-emerald-100/80 via-emerald-50/50 to-emerald-50/50 py-20 sm:py-28">
+    <section id="ubicaciones" className="relative overflow-hidden border-t border-slate-200 bg-gradient-to-b from-green-100/80 via-green-50/50 to-green-50/50 py-20 sm:py-28">
       <div className="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
-        <div className="absolute left-1/2 top-1/2 h-[34rem] w-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-300/50 blur-[130px] animate-pulse-glow" />
+        <div className="absolute left-1/2 top-1/2 h-[34rem] w-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-green-300/50 blur-[130px] animate-pulse-glow" />
       </div>
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <Reveal className="mx-auto max-w-3xl text-center">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-emerald-600">Red Operativa</p>
+          <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-green-600">Red Operativa</p>
           <h2 className="mt-5 text-3xl font-semibold leading-[1.12] tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
             Presencia estratégica en el <span className="text-gradient-eco">corazón del Orinoco</span>
           </h2>
@@ -50,12 +50,12 @@ export default function Locations() {
               <article className="group overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white shadow-soft transition-all duration-300 ease-in-out hover:-translate-y-1.5 hover:shadow-soft-lg">
                 <div className="flex items-center justify-between gap-3 border-b border-slate-100 px-6 py-5 sm:px-8">
                   <div className="flex items-center gap-3">
-                    <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-emerald-200 bg-emerald-50 text-emerald-600">
+                    <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-green-200 bg-green-50 text-green-600">
                       <IconMapPin className="h-4 w-4" />
                     </span>
                     <div>
                       <h3 className="text-lg font-semibold tracking-tight text-slate-900 sm:text-xl">{location.name}</h3>
-                      <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-emerald-600">
+                      <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-green-600">
                         {location.region}
                       </p>
                     </div>
