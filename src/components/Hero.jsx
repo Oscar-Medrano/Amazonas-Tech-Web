@@ -2,64 +2,36 @@ import { useState } from 'react'
 import { IconArrowRight, IconMapPin } from './icons'
 
 export default function Hero() {
-  const [glow, setGlow] = useState(null)
-
-  const handleMove = (event) => {
-    const rect = event.currentTarget.getBoundingClientRect()
-    setGlow({ x: event.clientX - rect.left, y: event.clientY - rect.top })
-  }
-
   return (
     <section
       id="inicio"
-      className="relative overflow-hidden bg-gradient-to-br from-[#10254A] via-[#0A192F] to-[#081426] pb-32 pt-24 sm:pt-32 lg:pb-48 lg:pt-40"
-      onMouseMove={handleMove}
-      onMouseLeave={() => setGlow(null)}
+      className="relative overflow-hidden pb-32 pt-24 sm:pt-32 lg:pb-48 lg:pt-40"
     >
-      <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
-        {/* Base azul profundo corporativo */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#10254A] via-[#0A192F] to-[#081426]" />
-        {/* Banda especular metálica */}
-        <div className="absolute inset-0 bg-[linear-gradient(115deg,transparent_12%,rgba(255,255,255,0.06)_35%,rgba(255,255,255,0.15)_50%,rgba(255,255,255,0.06)_65%,transparent_88%)]" />
-        {/* Textura cepillada metalizada */}
-        <div className="absolute inset-0 bg-[repeating-linear-gradient(115deg,rgba(255,255,255,0.028)_0px,rgba(255,255,255,0.028)_1px,transparent_1px,transparent_8px)]" />
-        {/* Degradados de luz */}
-        <div className="absolute -top-24 left-[18%] h-[28rem] w-[28rem] rounded-full bg-sky-400/18 blur-[120px]" />
-        <div className="absolute bottom-[-10rem] right-[12%] h-[26rem] w-[26rem] rounded-full bg-emerald-400/18 blur-[120px]" />
-        <div className="absolute left-1/2 top-1/3 h-[22rem] w-[22rem] -translate-x-1/2 rounded-full bg-blue-400/12 blur-[130px]" />
-        {/* Textura torre de perforación */}
-        <img
-          src="/background-torre.jpg"
-          alt=""
-          className="absolute inset-0 h-full w-full object-cover object-center opacity-[0.12] mix-blend-overlay"
+      <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden" aria-hidden="true">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          src="/img/taladro.mp4"
+          className="absolute inset-0 h-full w-full object-cover object-center"
         />
-        {/* Brillo que sigue al cursor */}
-        {glow && (
-          <div
-            className="absolute inset-0 transition-opacity duration-500"
-            style={{
-              background:
-                'radial-gradient(540px circle at ' +
-                glow.x +
-                'px ' +
-                glow.y +
-                'px, rgba(52, 211, 153, 0.30), rgba(56, 189, 248, 0.12) 45%, transparent 68%)',
-            }}
-          />
-        )}
+        <div className="absolute inset-0 bg-black/30" />
       </div>
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <h1 className="text-4xl font-semibold leading-[1.08] tracking-tight sm:text-6xl lg:text-7xl xl:text-[5.25rem]">
-            <span className="block text-white animate-fade-up [animation-delay:100ms]">Ingeniería de Sólidos</span>
-            <span className="block animate-fade-up [animation-delay:220ms] bg-gradient-to-r from-emerald-300 via-emerald-200 to-sky-200 bg-clip-text text-transparent">
-              Eficiencia Operativa
-            </span>
-            <span className="block text-white animate-fade-up [animation-delay:340ms]">Compromiso Ambiental</span>
-          </h1>
+          <img
+            src="/logo-amazonas-tech.png"
+            alt="Amazonas Tech, C.A."
+            className="mx-auto w-full max-w-xs sm:max-w-md md:max-w-xl lg:max-w-2xl animate-fade-up [animation-delay:100ms]"
+          />
 
-          <p className="mx-auto mt-10 max-w-2xl text-base leading-relaxed text-emerald-50/90 animate-fade-up [animation-delay:440ms] sm:text-lg lg:text-xl">
+          <div className="relative mx-auto mt-8 inline-flex w-full items-center justify-center gap-2 rounded-2xl px-6 py-3 text-xl sm:text-2xl font-bold transition-all duration-300 ease-in-out sm:w-auto animate-fade-up [animation-delay:680ms] bg-gradient-to-r from-emerald-300 via-emerald-200 to-emerald-500 bg-clip-text text-transparent [text-shadow:0_2px_40px_rgba(16,185,129,0.45)]">
+            Ambientalmente Comprometidos
+          </div>
+
+          <p className="mx-auto mt-10 max-w-3xl text-xl leading-relaxed sm:text-2xl lg:text-3xl text-white font-bold animate-fade-up [animation-delay:440ms] [text-shadow:0_2px_40px_rgba(0,0,0,0.6)]">
             Desde 2004, liderando la gestión integral de fluidos, separación de sólidos y manejo de desechos en la
             Faja Petrolífera del Orinoco y la industria nacional.
           </p>
@@ -75,9 +47,7 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="relative mx-auto mt-16 inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-emerald-200/70 bg-white/10 px-6 py-3 text-sm font-medium text-emerald-200/70 backdrop-blur-lg shadow-sm transition-all duration-300 ease-in-out sm:w-auto animate-fade-up [animation-delay:680ms]">
-            Ambientalmente Comprometidos
-          </div>
+          
         </div>
       </div>
     </section>

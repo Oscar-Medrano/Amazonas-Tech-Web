@@ -5,6 +5,9 @@ const LOGOS = [
   { src: '/img/nabep.webp', alt: 'North American Blue Energy Partners' },
   { src: '/img/slb-logo.png', alt: 'SLB' },
   { src: '/img/chevron-logo.png', alt: 'Chevron' },
+  { src: '/img/Halliburton-Logo.png', alt: 'Halliburton' },
+  { src: '/img/DPA.png', alt: 'DPA' },
+  { src: '/img/BHDC.png', alt: 'BHDC' },
 ]
 
 export default function Clients() {

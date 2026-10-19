@@ -42,37 +42,23 @@ export default function About() {
                 Orinoco con los más altos estándares de calidad, seguridad e ingeniería.
               </p>
             </Reveal>
+          </div>
 
-            <Reveal delay={140} className="mt-10">
+          <div className="flex items-center">
+            <Reveal delay={200}>
               <div className="group relative overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white shadow-soft">
                 <img
                   src="/img/taladro.jpeg"
                   alt="Equipamiento especializado de Amazonas Tech: unidad de zarandas vibratorias en planta de procesos"
-                  width={587}
-                  height={543}
+                  width={700}
+                  height={650}
                   loading="lazy"
                   decoding="async"
-                  className="aspect-[4/3] w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.03]"
+                  className="aspect-[4/3] h-full min-h-[400px] w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.03] lg:min-h-[550px]"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
               </div>
             </Reveal>
-          </div>
-
-          <div className="flex flex-col gap-6">
-            {PILLARS.map((pillar, index) => (
-              <Reveal key={pillar.title} delay={index * 120}>
-                <article className="group rounded-[1.75rem] border border-slate-200/80 bg-white p-7 shadow-soft transition-all duration-300 ease-in-out hover:-translate-y-1 hover:border-emerald-200 hover:shadow-soft-lg sm:p-9">
-                  <div className="flex items-center gap-4">
-                    <span className="flex h-11 w-11 items-center justify-center rounded-xl border border-emerald-200 bg-emerald-50 text-emerald-600 transition-all duration-300 ease-in-out group-hover:border-emerald-300 group-hover:bg-emerald-100">
-                      <pillar.icon />
-                    </span>
-                    <h3 className="text-lg font-semibold tracking-tight text-slate-900 sm:text-xl">{pillar.title}</h3>
-                  </div>
-                  <p className="mt-5 text-[15px] leading-relaxed text-slate-600">{pillar.text}</p>
-                </article>
-              </Reveal>
-            ))}
           </div>
         </div>
       </div>

@@ -51,7 +51,7 @@ export default function Navbar() {
         >
           <Logo className="shrink-0" onNavigate={() => setMenuOpen(false)} />
 
-          <ul className="ml-auto hidden items-center gap-2.5 xl:flex">
+          <ul className="ml-auto hidden items-center gap-2.5 lg:flex">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
                 <a
@@ -67,7 +67,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setMenuOpen(true)}
-            className="ml-auto inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition-all duration-300 ease-in-out hover:border-emerald-300 hover:text-emerald-600 xl:hidden"
+            className="ml-auto inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition-all duration-300 ease-in-out hover:border-emerald-300 hover:text-emerald-600 lg:hidden"
             aria-label="Abrir menú"
             aria-expanded={menuOpen}
           >
@@ -77,7 +77,7 @@ export default function Navbar() {
       </header>
 
       <div
-        className={`fixed inset-0 z-[60] transition-all duration-300 ease-in-out xl:hidden ${
+        className={`fixed inset-0 z-[60] transition-all duration-300 ease-in-out lg:hidden ${
           menuOpen ? 'visible opacity-100' : 'invisible opacity-0'
         }`}
         role="dialog"

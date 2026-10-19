@@ -4,6 +4,7 @@ const IMAGES = [
   { src: '/img/maquinaria-pesada.jpg', alt: 'Maquinaria pesada en operación' },
   { src: '/img/maquinaria-especializada.jpg', alt: 'Maquinaria especializada en planta de procesos' },
   { src: '/img/camionetas.jpeg', alt: 'Camionetas de Amazonas Tech' },
+  { src: '/img/camion rojo.jpeg', alt: 'Camión de Amazonas Tech' },
 ]
 
 export default function Marquee() {

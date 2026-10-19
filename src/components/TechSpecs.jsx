@@ -36,7 +36,7 @@ const TABS = [
   {
     id: 'flota',
     label: 'Flota Especializada',
-    image: '/img/flota.jpg',
+    image: '/img/flota.jpeg',
     alt: 'Flota de unidades vacuum y camiones de Amazonas Tech en base operativa',
     title: 'Flota Especializada',
     text: 'Flota pesada propia y equipamiento de última generación que garantizan capacidad de respuesta inmediata en cada locación.',
@@ -49,11 +49,11 @@ const TABS = [
     ],
   },
   {
-    id: 'obras',
-    label: 'Obras Civiles',
+    id: 'tratamientofinal',
+    label: 'Tratamiento Final',
     image: '/img/acondicionamiento-terreno.jpg',
     alt: 'Acondicionamiento de terreno para localización petrolera ejecutado por Amazonas Tech',
-    title: 'Obras Civiles Petroleras',
+    title: 'Tratamiento Final',
     text: 'Infraestructura y preparación de terrenos con ingeniería de precisión para garantizar la operatividad de los campos petroleros.',
     equipos: ['Adecuación de localizaciones', 'Saneamiento de fosas', 'Acondicionamiento de accesos', 'Movimiento de tierra', 'Cuadrillas especializadas'],
     specs: [
@@ -61,6 +61,28 @@ const TABS = [
       'Mantenimiento de fosas',
       'Acondicionamiento de vías de acceso',
       'Movimiento de tierra con equipos propios',
+    ],
+  },
+  {
+    id: 'dewatering',
+    label: 'Dewatering',
+    image: '/img/dewatering.jpeg',
+    alt: 'Unidades de deshidratación de lodos (Dewatering) en operación',
+    title: 'Unidad de Dewatering (Palmoriche C.A.)',
+    text: 'Optimizamos la recuperación de fase líquida y reducimos significativamente el volumen de desechos enviados a disposición final, ejecutado en alianza estratégica con Palmoriche C.A.',
+    equipos: [
+      'Unidades Mecánicas de Deshidratación (Dewatering Units)',
+      'Sistemas de Dosificación y Floculación Química',
+      'Separación Sólido-Líquido de Alto Rendimiento',
+      'Clarificación y Acondicionamiento de Efluentes',
+      'Reducción Volumétrica de Desechos en Sitio',
+      'Alineación con Normativa Ambiental Vigente',
+    ],
+    specs: [
+      'Manejo Ambiental e Industrial',
+      'Deshidratación de Lodos (Dewatering)',
+      'Optimización en la recuperación de la fase líquida',
+      'Ejecución bajo estrictos controles ambientales',
     ],
   },
   {
@@ -98,14 +120,14 @@ export default function TechSpecs() {
             Servicios <span className="text-gradient-titanium">Integrales</span>
           </h2>
           <p className="mt-5 text-base leading-relaxed text-slate-600 sm:text-lg">
-            Control de sólidos, gestión ambiental, flota especializada, obras civiles y soldadura industrial:
+            Control de sólidos, gestión ambiental, flota especializada, tratamiento final y soldadura industrial:
             tecnología propietaria, procesos técnicamente controlados y cumplimiento ambiental en cada etapa de la
             operación de perforación.
           </p>
         </Reveal>
 
         <Reveal delay={120} className="mt-12 flex justify-center">
-          <div className="w-full max-w-3xl rounded-2xl border border-slate-200 bg-slate-100 p-2 shadow-inner sm:rounded-full sm:p-1.5">
+          <div className="w-full max-w-4xl rounded-2xl border border-slate-200 bg-slate-100 p-2 shadow-inner sm:rounded-full sm:p-1.5">
             <div className="grid max-sm:grid-cols-1 grid-cols-2 gap-1.5 sm:flex sm:flex-wrap sm:items-center sm:justify-center">
               {TABS.map((item, index) => (
                 <button
