@@ -1,6 +1,18 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Reveal from './Reveal'
 import { IconCheck } from './icons'
+
+const AMBIENTAL_IMAGES = [
+  '/img/servicios-ambientales.jpg',
+  '/img/servicios ambientales 1.jpg',
+  '/img/servicios ambientales 2.jpg',
+  '/img/servicios ambientales 3.jpg',
+]
+
+const TRATAMIENTO_IMAGES = [
+  '/img/acondicionamiento-terreno.jpg',
+  '/img/tratamiento final 2.jpeg',
+]
 
 const TABS = [
   {
@@ -22,10 +34,11 @@ const TABS = [
     id: 'ambiental',
     label: 'Servicios Ambientales',
     image: '/img/servicios-ambientales.jpg',
+    images: AMBIENTAL_IMAGES,
     alt: 'Operaciones de manejo ambiental y tratamiento de desechos de Amazonas Tech',
     title: 'Servicios Ambientales',
     text: 'Gestión ecológica e integral de desechos petroleros bajo estrictos estándares internacionales y cumplimiento normativo legal vigente.',
-    equipos: ['Centro de Manejo de Desechos', 'Centro Palmoriche', 'Mud Cleaners', 'Tratamiento de Ripios y Lodos', 'Remediación de Zonas Afectadas', 'Inyección Controlada'],
+    equipos: ['Centro de Manejo de Desechos', 'Centro Palmoriche', 'Remediación de Zonas Afectadas', 'Recolección, almacenamiento y transporte de ripios, lodos y aguas industriales'],
     specs: [
       'Disposición final y neutralización segura de efluentes e hidrocarburos.',
       'Reintegración y restauración de suelos intervenidos por la actividad operacional.',
@@ -52,10 +65,11 @@ const TABS = [
     id: 'tratamientofinal',
     label: 'Tratamiento Final',
     image: '/img/acondicionamiento-terreno.jpg',
+    images: TRATAMIENTO_IMAGES,
     alt: 'Acondicionamiento de terreno para localización petrolera ejecutado por Amazonas Tech',
     title: 'Tratamiento Final',
     text: 'Infraestructura y preparación de terrenos con ingeniería de precisión para garantizar la operatividad de los campos petroleros.',
-    equipos: ['Adecuación de localizaciones', 'Saneamiento de fosas', 'Acondicionamiento de accesos', 'Movimiento de tierra', 'Cuadrillas especializadas'],
+    equipos: ['Adecuación de localizaciones', 'Saneamiento de fosas', 'Cuadrillas especializadas'],
     specs: [
       'Preparación de locaciones para perforación',
       'Mantenimiento de fosas',
@@ -105,6 +119,21 @@ const TABS = [
 export default function TechSpecs() {
   const [active, setActive] = useState(0)
   const tab = TABS[active]
+  const [imgIndex, setImgIndex] = useState(0)
+
+  const images = tab.images || [tab.image]
+
+  useEffect(() => {
+    setImgIndex(0)
+  }, [active])
+
+  useEffect(() => {
+    if (images.length <= 1) return
+    const interval = setInterval(() => {
+      setImgIndex((prev) => (prev + 1) % images.length)
+    }, 2000)
+    return () => clearInterval(interval)
+  }, [active, images.length])
 
   return (
     <section id="servicios" className="relative overflow-hidden border-t border-slate-200 bg-gradient-to-b from-green-100/80 via-green-50/50 to-green-50/50 py-20 sm:py-28">
@@ -152,15 +181,20 @@ export default function TechSpecs() {
 
         <div key={tab.id} className="mt-10 grid animate-fade-up gap-8 lg:mt-12 lg:grid-cols-2 lg:gap-12">
           <div className="group relative min-h-[20rem] overflow-hidden rounded-[1.75rem] border border-slate-200 bg-slate-900 shadow-soft sm:min-h-[24rem] lg:min-h-[30rem]">
-            <img
-              src={tab.image}
-              alt={tab.alt}
-              width={1254}
-              height={1254}
-              loading="lazy"
-              decoding="async"
-              className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.03]"
-            />
+            {images.map((src, idx) => (
+              <img
+                key={src}
+                src={src}
+                alt={tab.alt}
+                width={1254}
+                height={1254}
+                loading={idx === 0 ? 'eager' : 'lazy'}
+                decoding="async"
+                className={`absolute inset-0 h-full w-full object-cover transition-all duration-1000 ease-in-out ${
+                  idx === imgIndex ? 'opacity-100 scale-100 group-hover:scale-[1.03]' : 'opacity-0 scale-105'
+                }`}
+              />
+            ))}
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent" />
             <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
               <p className="mt-2 text-lg font-semibold tracking-tight text-white sm:text-xl">{tab.title}</p>

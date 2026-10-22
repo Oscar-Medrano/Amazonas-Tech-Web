@@ -8,6 +8,7 @@ const LOGOS = [
   { src: '/img/Halliburton-Logo.png', alt: 'Halliburton' },
   { src: '/img/DPA.png', alt: 'DPA' },
   { src: '/img/BHDC.png', alt: 'BHDC' },
+  { src: '/img/petroindependencia.png', alt: 'Petroindependencia' },
 ]
 
 export default function Clients() {
