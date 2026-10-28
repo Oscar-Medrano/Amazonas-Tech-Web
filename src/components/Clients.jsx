@@ -22,7 +22,7 @@ export default function Clients() {
         <Reveal className="mx-auto max-w-2xl text-center">
           <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-green-600">Confianza de la Industria</p>
           <h2 className="mt-5 text-2xl font-semibold leading-[1.15] tracking-tight text-slate-900 sm:text-3xl lg:text-4xl">
-            Operadores y contratistas que <span className="text-gradient-eco">confían en nuestra operación</span>
+            Contratistas que <span className="text-gradient-eco">confían en nuestra operación</span>
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-slate-600 sm:text-base">
             Más de dos décadas prestando servicios a las principales empresas de la industria petrolera nacional.

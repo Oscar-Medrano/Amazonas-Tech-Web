@@ -156,17 +156,15 @@ export default function TechSpecs() {
         </Reveal>
 
         <Reveal delay={120} className="mt-12 flex justify-center">
-          <div className="w-full max-w-4xl rounded-2xl border border-slate-200 bg-slate-100 p-2 shadow-inner sm:rounded-full sm:p-1.5">
-            <div className="grid max-sm:grid-cols-1 grid-cols-2 gap-1.5 sm:flex sm:flex-wrap sm:items-center sm:justify-center">
+          <div className="w-full rounded-2xl border border-slate-200 bg-slate-100 p-2 shadow-inner lg:rounded-full lg:p-1.5">
+            <div className="grid grid-cols-1 gap-1.5 lg:flex lg:flex-nowrap lg:items-center lg:justify-center lg:gap-1.5 lg:overflow-x-auto">
               {TABS.map((item, index) => (
                 <button
                   key={item.id}
                   type="button"
                   onClick={() => setActive(index)}
                   aria-pressed={active === index}
-                  className={`whitespace-nowrap rounded-xl px-4 py-3 text-center text-[13px] font-semibold transition-all duration-300 ease-in-out sm:rounded-full sm:px-5 sm:py-2.5 ${
-                    index === TABS.length - 1 ? 'max-sm:col-span-1 col-span-2 sm:col-span-1' : ''
-                  } ${
+                  className={`w-full whitespace-nowrap rounded-xl px-3 py-2.5 text-center text-xs font-semibold transition-all duration-300 ease-in-out lg:w-auto lg:rounded-full lg:px-4 lg:py-2 xl:px-5 ${
                     active === index
                       ? 'bg-white text-green-700 shadow-sm ring-1 ring-slate-200'
                       : 'text-slate-600 hover:text-slate-900'
@@ -179,8 +177,8 @@ export default function TechSpecs() {
           </div>
         </Reveal>
 
-        <div key={tab.id} className="mt-10 grid animate-fade-up gap-8 lg:mt-12 lg:grid-cols-2 lg:gap-12">
-          <div className="group relative min-h-[20rem] overflow-hidden rounded-[1.75rem] border border-slate-200 bg-slate-900 shadow-soft sm:min-h-[24rem] lg:min-h-[30rem]">
+        <div key={tab.id} className="mt-10 grid animate-fade-up gap-8 lg:mt-12 lg:grid-cols-5 lg:gap-10">
+          <div className="group relative min-h-[20rem] overflow-hidden rounded-[1.75rem] border border-slate-200 bg-slate-900 shadow-soft sm:min-h-[24rem] lg:col-span-3 lg:min-h-[30rem]">
             {images.map((src, idx) => (
               <img
                 key={src}
@@ -195,36 +193,18 @@ export default function TechSpecs() {
                 }`}
               />
             ))}
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent" />
-            <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
-              <p className="mt-2 text-lg font-semibold tracking-tight text-white sm:text-xl">{tab.title}</p>
-            </div>
           </div>
 
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col lg:col-span-2">
             <p className="text-base leading-relaxed text-slate-600 sm:text-lg">{tab.text}</p>
 
-            <h3 className="mt-9 text-[11px] font-semibold uppercase tracking-[0.3em] text-green-600">
-              {tab.id === 'ambiental' ? 'Instalaciones & Capacidades' : 'Equipos & Tecnología'}
-            </h3>
-            <ul className="mt-4 flex flex-wrap gap-2.5">
-              {tab.equipos.map((item) => (
-                <li
-                  key={item}
-                  className="rounded-full border border-slate-200 bg-white px-4 py-2 text-[13px] font-medium text-slate-700 shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:border-green-300 hover:text-green-700"
-                >
-                  {item}
-                </li>
-              ))}
-            </ul>
-
-            <ul className="mt-9 grid gap-3.5 sm:grid-cols-2">
-              {tab.specs.map((spec) => (
-                <li key={spec} className="flex items-start gap-3.5 text-[15px] leading-relaxed text-slate-600">
+            <ul className="mt-6 grid gap-3.5">
+              {(tab.equipos || tab.specs).map((item) => (
+                <li key={item} className="flex items-start gap-3.5 text-[15px] leading-relaxed text-slate-600">
                   <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-green-600 to-green-500 text-white shadow-soft transition-all duration-300 ease-in-out hover:from-green-500 hover:to-green-400">
-                    <IconCheck className="h-3.5 w-3.5" />
+                    <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
                   </span>
-                  {spec}
+                  {item}
                 </li>
               ))}
             </ul>

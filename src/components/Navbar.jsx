@@ -15,7 +15,15 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 16)
+    const onScroll = () => {
+      const hero = document.getElementById('inicio')
+      if (hero) {
+        const rect = hero.getBoundingClientRect()
+        setScrolled(rect.bottom < 0)
+      } else {
+        setScrolled(window.scrollY > 16)
+      }
+    }
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
@@ -49,7 +57,12 @@ export default function Navbar() {
           className="mx-auto flex h-16 max-w-7xl items-center gap-6 px-5 sm:h-20 sm:px-6 lg:px-8"
           aria-label="Navegación principal"
         >
-          <Logo className="shrink-0" onNavigate={() => setMenuOpen(false)} />
+          <Logo
+            className={`shrink-0 transition-all duration-700 ease-in-out ${
+              scrolled ? 'opacity-100' : 'opacity-0 pointer-events-none'
+            }`}
+            onNavigate={() => setMenuOpen(false)}
+          />
 
           <ul className="ml-auto hidden items-center gap-2.5 lg:flex">
             {NAV_LINKS.map((link) => (
