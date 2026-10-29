@@ -19,12 +19,6 @@ export default function App() {
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-slate-50">
       {!loaded && <Preloader onComplete={() => setLoaded(true)} />}
-      <a
-        href="#inicio"
-        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[80] focus:rounded-full focus:bg-green-600 focus:px-5 focus:py-2.5 focus:text-sm focus:font-semibold focus:text-white"
-      >
-        Saltar al contenido
-      </a>
 
       <Navbar />
 

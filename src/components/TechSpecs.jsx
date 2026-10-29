@@ -164,7 +164,7 @@ export default function TechSpecs() {
                   type="button"
                   onClick={() => setActive(index)}
                   aria-pressed={active === index}
-                  className={`w-full whitespace-nowrap rounded-xl px-3 py-2.5 text-center text-xs font-semibold transition-all duration-300 ease-in-out lg:w-auto lg:rounded-full lg:px-4 lg:py-2 xl:px-5 ${
+                  className={`w-full whitespace-nowrap rounded-xl px-3 py-2.5 text-center text-sm lg:text-xs xl:text-sm font-semibold transition-all duration-300 ease-in-out lg:w-auto lg:rounded-full lg:px-4 lg:py-2 xl:px-5 ${
                     active === index
                       ? 'bg-white text-green-700 shadow-sm ring-1 ring-slate-200'
                       : 'text-slate-600 hover:text-slate-900'
